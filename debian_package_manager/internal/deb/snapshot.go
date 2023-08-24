@@ -111,3 +111,14 @@ func Security(snapshot string, arch config.Arch, distro config.Distro) *PackageI
 		Channel:  "security",
 	}
 }
+
+func Unstable(snapshot string, arch config.Arch, distro config.Distro) *PackageIndex {
+	return &PackageIndex{
+		URL:      fmt.Sprintf("https://snapshot.debian.org/archive/debian/%s/dists/%s/main/binary-%s/Packages.xz", snapshot, "sid", arch.DebianName()),
+		PoolRoot: fmt.Sprintf("https://snapshot.debian.org/archive/debian/%s/", snapshot),
+		Snapshot: snapshot,
+		Distro:   distro,
+		Arch:     arch,
+		Channel:  "unstable",
+	}
+}

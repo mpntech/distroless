@@ -8,6 +8,7 @@ package(default_visibility = ["//visibility:public"])
 
 DISTRO_VERSION = {
     "debian11": "3.9",
+    "debian12": "3.11",
 }
 
 [

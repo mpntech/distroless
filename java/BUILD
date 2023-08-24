@@ -21,6 +21,7 @@ JAVA_ARCHITECTURES = ARCHITECTURES + [
 ]
 
 JAVA_VERSIONS = [
+    "8",
     "11",
     "17",
 ]
@@ -237,10 +238,18 @@ JAVA_VERSIONS = [
 ]
 
 RULE_NAMES = [
+    ("java8_root_debian11", "java8_root_amd64_debian11"),
+    ("java8_nonroot_debian11", "java8_nonroot_amd64_debian11"),
     ("java11_root_debian11", "java11_root_amd64_debian11"),
     ("java11_nonroot_debian11", "java11_nonroot_amd64_debian11"),
     ("java17_root_debian11", "java17_root_amd64_debian11"),
     ("java17_nonroot_debian11", "java17_nonroot_amd64_debian11"),
+    ("java8_root_debian12", "java8_root_amd64_debian12"),
+    ("java8_nonroot_debian12", "java8_nonroot_amd64_debian12"),
+    ("java11_root_debian12", "java11_root_amd64_debian12"),
+    ("java11_nonroot_debian12", "java11_nonroot_amd64_debian12"),
+    ("java17_root_debian12", "java17_root_amd64_debian12"),
+    ("java17_nonroot_debian12", "java17_nonroot_amd64_debian12"),
 ]
 
 [

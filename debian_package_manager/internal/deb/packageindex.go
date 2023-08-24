@@ -31,6 +31,7 @@ func PackageIndexGroup(snapshots *config.Snapshots, arch config.Arch, distro con
 		Main(snapshots.Debian, arch, distro),
 		Updates(snapshots.Debian, arch, distro),
 		Security(snapshots.Security, arch, distro),
+		Unstable(snapshots.Debian, arch, distro),
 	}
 }
 
